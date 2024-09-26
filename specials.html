@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specials - Nammora Sobagu</title>
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <style>
+        /* Inherit basic styles from styles.css */
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nammora Sobagu</h1>
+    <h2>Specials Menu</h2>
+    <!-- <input type="text" id="searchBar" placeholder="Search...">
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <span id="toggleIcon">🌙</span>
+    </button> -->
+</header>
+
+<nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="breakfast.html">Breakfast</a>
+    <a href="starters.html">Starters</a>
+    <a href="breads.html">Indian Breads</a>
+    <a href="juice.html">Juice</a>
+    <a href="desserts.html">Desserts</a>
+    <a href="beverages.html">Beverages</a>
+    <a href="specials.html">Specials</a>
+    <a href="chef.html">Chef</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="content">
+    <h2>Specials Items</h2>
+    <ul>
+        <li>Chef's Special Pizza</li>
+        <li>Seasonal Salad</li>
+        <li>Grilled Special</li>
+        <!-- Add more specials items here -->
+    </ul>
+</div>
+
+<button id="backToTop" title="Go to top">↑</button>
+
+<script>
+    document.getElementById('themeToggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        this.classList.toggle('dark-mode');
+        document.getElementById('toggleIcon').textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+
+    document.getElementById('backToTop').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
